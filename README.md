@@ -1,1 +1,1 @@
-# remote_sys_kvant
+# Remote programming system for robots with a web interface.
