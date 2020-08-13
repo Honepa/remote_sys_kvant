@@ -1,0 +1,11 @@
+#wrapper{
+    max-width: 960px;
+    margin: auto;
+}
+
+body{
+    background: linear-gradient(transparent 50%, #7FFFD4 50%), 
+                linear-gradient(90deg, #7FFFD4 50%, transparent 50%);
+    background-size: 60px 60px;
+    background-color: #00FA9A;
+}
