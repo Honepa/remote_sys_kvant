@@ -4,8 +4,79 @@
 }
 
 body{
-    background: linear-gradient(transparent 50%, #7FFFD4 50%), 
+    background: linear-gradient(transparent 50%, #7FFFD4 50%),
                 linear-gradient(90deg, #7FFFD4 50%, transparent 50%);
     background-size: 60px 60px;
     background-color: #00FA9A;
+}
+header{
+  margin: 100px;
+}
+footer{
+  margin-top: 200px;
+}
+button{
+  border: none;
+  outline: none;
+  background-color: rgba(164, 147, 90, 0);
+}
+#choice{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#arduino{
+  width:  200px;
+  height: 200px;
+  margin: 10px;
+}
+#arduino_img{
+  border-radius: 75px;
+  width:  200px;
+  height: 200px;
+}
+#arduino img:hover{
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+#python{
+  width:  200px;
+  height: 200px;
+  margin: 10px;
+}
+#python_img{
+  border-radius: 75px;
+  width:  200px;
+  height: 200px;
+}
+#python img:hover{
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+#lego{
+  width:  200px;
+  height: 200px;
+  margin: 10px;
+}
+#lego_img{
+  border-radius: 75px;
+  width:  200px;
+  height: 200px;
+}
+#lego img:hover{
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+#p_footer{
+  font-size: 14pt;
+  text-align: center;
+  font-style: italic;
+}
+#footer_git{
+  font-size: 9pt;
+  text-align: center;
+  color: #807a7a;
+}
+a{
+  text-decoration: none;
+  color: #807a7a;
 }

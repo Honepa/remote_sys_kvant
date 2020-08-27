@@ -1,17 +1,40 @@
 <html>
-    <head>
-        <title>Remote System</title>
-        <link rel="shortcut icon" href="{{url_for('static', filename='favicon_robo.png')}}" type="image/png">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_index.css') }}">
-    </head>
-    <body>
+  <head>
+    <title>Remote System</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon_robo.png')}}" type="image/png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_index.css') }}">
+  </head>
+  <body>
     <div id="wrapper">
-        <header>
-            <div id="choice">
-            </div>
-        </header>
-        <footer></footer>
+      <header>
+      </header>
+      <div id="choice">
+         <div id="arduino">
+            <!--<img  id="arduino_img" src="{{ url_for('static', filename='arduino_ico.jpg') }}">-->
+            <form action="/arduino/" id="go_arduino" method="post">
+    		       <button type="submit" name="go_arduino"><img id="arduino_img" src="{{ url_for('static', filename='arduino_ico.jpg') }}"> </button>
+      		  </form>
+         </div>
+         <div id="python">
+           <form action="/python/" id="go_python" method="post">
+              <button type="submit" name="go_python"><img id="python_img" src="{{ url_for('static', filename='python_ico.jpg') }}"> </button>
+           </form>
+         </div>
+      	 <div id="lego">
+           <form action="/lego/" id="go_lego" method="post">
+              <button type="submit" name="go_lego"><img id="lego_img" src="{{ url_for('static', filename='lego_ico.jpg') }}"> </button>
+           </form>
+         </div>
+      </div>
+      <footer>
+        <p id="p_footer">
+          Remote system for programming robots
+        </p>
+        <p id="footer_git">
+          Created by <a href="https://github.com/honepa">@Honepa</a> (GitHub)
+        </p>
+      </footer>
     </div>
-    </body>
+  </body>
     <script src="{{url_for('static', filename='script.js')}}"></script>
 </html>

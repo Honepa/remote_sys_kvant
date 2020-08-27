@@ -9,6 +9,18 @@ def not_found(error):
 def index():
     return render_template('index.html')
 
+@app.route("/arduino/", methods=['POST'])
+def go_arduino():
+    return render_template('arduino_run.html')
+
+@app.route("/python/", methods=['POST'])
+def go_python():
+    return render_template('python_run.html')
+
+@app.route("/lego/", methods=['POST'])
+def go_lego():
+    return render_template('lego_run.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
