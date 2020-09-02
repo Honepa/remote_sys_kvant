@@ -12,3 +12,6 @@ body{
 button{
   background: url("{{ url_for('static', filename='back.png') }}");
 }
+#go_back_buttom{
+  background-color: #999999;
+}
