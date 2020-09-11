@@ -1,8 +1,7 @@
-var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-  mode: {name: "python",
-         version: 3,
-         singleLineStringErrors: false},
+var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code"), {
   lineNumbers: true,
+  matchBrackets: true,
+  mode: 'python',
   indentUnit: 4,
-  matchBrackets: true
+  version: 3
 });
